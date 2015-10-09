@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jonathan Jardim | JavaScript Practice</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/responsive.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="header">
+<header>
+<!--Logo will replace this text-->
+<div class="logo"><h1>Jonathan Jardim</h1> 
+<h2>HTML/CSS/JavaScript Practice</h2>
+</div>
+<div class="nav">
+<nav>
+  <ul>
+     <li><a href="../index.html">About</a></li>
+       <li id="current"><a href="calcalculator/calcalculator.html">Calorie Calculator</a></li>
+    <li><a href="../todo/todo.html">To-do List</a></li>
+     <li><a href="../photo/photo.html">Photography</a></li>
+    <li class="contact"><a href="../contact/contact.html">Contact</a></li>
+  </ul>
+</nav>
+</div>
+</header>
+</div>
+<div id="wrapper">
+    <div class="intro">
+    <h2>Calculate Total Daily Energy Expenditure (TDEE)</h2>
+    <p>Enter information below and find out your total Daily Energy Expenditure (TDEE). Write down this number and use a calorie counting app to see how many calories you consume per day. If you want to maintain your weight you should aim to eat around the same number of calories as your TDEE. </p>
+    </div>
+<div class="gender1">
+    <h3>What is your gender?</h3>
+   <select id = "gender">
+       <option text="---">---</option>
+       <option text="Male">Male</option>
+       <option text="Female">Female</option>
+    </select>
+</div>
+<div>
+    <h3>Enter your weight in kg</h3>
+    <p>Convert lbs to kgs</p>
+    <p><input id="lbConvert" type = "text" placeholder="enter weight in lbs">
+    <button id="kgConvert">Convert</button></p>
+    <p class="orEnter">Or enter weight in kgs</p>
+    <input  id="weight" type="text" placeholder="enter weight in kg">
+ 
+    <h3>Enter your height in cm</h3>
+    <p>Convert feet and inches to cm</p>
+    <p><input id="ftConvert" type = "text" placeholder="feet"><input id="inchConvert" type = "text" placeholder="inches">
+    <button id="cmConvert">Convert</button></p>
+    <p class="orEnter">Or enter height in cm</p>
+    <input id="height" type="text" placeholder="enter height in cm">
+  <h3>Enter your age in years</h3>
+      <input id="age" type="text" placeholder="enter age in years">
+    <h3>Choose amount of Exercise/Activity</h3>
+    <select id = "activityFactor">
+       <option value = "0"> --- </option>
+       <option value = "1.2">Sedentary | Little or no Exercise/ desk job</option>
+       <option value = "1.375">Lightly active | Light exercise/ sports 1 – 3 days/ week</option>
+        <option value = "1.55">Moderately active | Moderate Exercise, sports 3 – 5 days/ week</option>
+       <option value = "1.725">Very active | Heavy Exercise/ sports 6 – 7 days/ week</option>
+       <option value = "1.9">Extremely active | Very heavy exercise/ physical job/ training 2 x/ day
+ </option>
+    </select>  
+    <p><button id="calculate">Calculate</button></p>
+    <hr>
+    <div><h2 id="answer"></h2></div>
+<footer>
+  <div class="twitFace">    
+    <a href="http://twitter.com"><img src = "../images/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="http://facebook.com"><img src = "../images/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
+     <p class="copyRight">&copy; 2015 Jonathan Jardim.</p>
+  </div>
+</div>
+</div>
+</footer>
+<script src = "../js/calcalculator.js"></script>
+</body>
+</html>
